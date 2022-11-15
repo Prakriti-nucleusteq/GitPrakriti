@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background: linear-gradient(ghostwhite,snow);
+    background-repeat: no-repeat;
+
+}
+
+.form-inputs p{
+    color: black;
+}
+
+.hrule{
+    border: 1px tra saddlebrown;
+    background-color: wheat;
+    margin-bottom: 10px;
+}
+
+.registration-form{
+    width: 100vw;
+    height: 92vh;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+.heading1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5px 0;
+    background-image: linear-gradient(black,black);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.form{
+    border: 1px solid rgb(226, 222, 222);
+    height: 600px;
+    width: 575px;
+    padding-left: 60px;
+    padding-right: 50px;
+    background-image: linear-gradient(rgb(226, 222, 222),rgb(226, 222 ,222));
+}
+
+.form_input{
+    margin: 4px 0;
+    padding: 12px 20px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* margin-bottom: 15px; */
+    border: 1px solid silver;
+    padding: 10px;
+}
+
+.form_label {
+    justify-content: flex-start;
+    /* align-self: flex-start; */
+    background-image: linear-gradient(#151516, #434242);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+#role{
+    margin-bottom: 20px;
+}
+
+.form-input-btn{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(rgb(67, 177, 224),rgb(160, 219, 236));
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+.valid-registration-msg{
+    font-size:x-small;
+    color: red; 
+    float: left;
+    align-items: flex-end;
+    font-weight:bold;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 10px;
+}
+.radio-btns{
+    padding-top: 5%;
+  padding-left: 5%;
+  justify-content: flex-start;
+    /* align-self: flex-start; */
+    background-image: linear-gradient(#151516, #434242);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    /* display: block; */
+    font-size: 15px;
+    vertical-align: baseline;
+}
+
+#employee{
+    margin-left: 10%;
+
+}
+
+.form-cancel-btn{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(rgb(240, 18, 18),rgb(113, 7, 7));
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+button:hover{
+    cursor: pointer;
+    color: black;
+    background-image: linear-gradient(gainsboro,ghostwhite);
+}
+
+#validation-radio-btn{
+    margin-top: 20px;
+}
+
+.registration-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.registration-img img{
+    width: 800px;
+}

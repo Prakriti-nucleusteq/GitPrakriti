@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background: linear-gradient(ghostwhite, snow);
+    background-repeat: no-repeat;
+}
+.category-image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -2%;
+}
+.category-image img{
+    width: 500px;
+}
+.heading-1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0;
+    background-image: linear-gradient(crimson,orangered);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hori-rule{
+    border: 1px tra saddlebrown;
+    background-color: wheat;
+    margin-bottom: 40px;
+}
+.main-div{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-form{
+    border: 5px solid rgb(226, 222, 222);
+    height: 500px;
+    width: 600px;
+    padding-left: 40px;
+    padding-right:40px;
+    margin-top: -2%;
+    margin-left: 10%;
+    background-image: linear-gradient(grey,grey);
+    overflow-y:scroll;
+    display:block;
+}
+.form_input{
+    margin: 10px 0;
+    padding: 12px 20px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* margin-bottom: 15px; */
+    border: 1px solid silver;
+    padding: 10px;
+}
+.form_label{
+    justify-content: flex-start;
+    /* align-self: flex-start; */
+    background-image: linear-gradient(#151516, #434242);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+.grid-containers{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.category-submit{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(blue,blue);
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    background-image: linear-gradient(grey,grey);
+}
+.category-cancel{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(blue,blue);
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.category-back{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(blue,blue);
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.update-cat{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(grey,grey);
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.add-fields{
+    padding: 6px 12px;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.00;
+    background-image: linear-gradient(grey,grey);
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+}
+#subcategory{
+    width: 10vw;
+}
+#subc-input{
+    width: 15vw;
+}
+.subcategory-div{
+    display: inline-block;
+}
+#add-subcategory{
+    margin-top: 15px;
+}
+#remove-btn{
+    padding: 6px 8px;
+    font-size:x-small;
+    margin-left: 20px;
+}
+#plus-btn{
+    float: right;
+}

@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  application1:
+    build: .
+    image: helpdesk-api
+    ports:
+      - "9090:9090"
+    depends_on:
+      mydb:
+         condition: service_healthy
+    networks:
+      - shared-network
+  mydb:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=datahub
+    healthcheck:
+            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            timeout: 20s
+            retries: 10
+    networks:
+      - shared-network
+  front-end:
+    image : helpdeskf:latest
+    ports:
+      - "3000:3000"
+    expose:
+      - 3000
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+    depends_on:
+      - application
+    networks:
+      - shared-network
+networks:
+  shared-network:
