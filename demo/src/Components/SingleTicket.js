@@ -17,7 +17,7 @@ import { useState, createContext, useContext } from "react";
 
 const SingleTicket = ({ tickets, update , onUpdate}) => {
   const deleteTicket = (ticketId) => {
-    axios.delete(`http://localhost:9090/api/tickets/${ticketId}`).then(
+    axios.delete(`http://54.95.126.93:9090/api/tickets/${ticketId}`).then(
       (response) => {
         //toast.success("Ticket Deleted Successfully");
        // alert("Ticket Deleted Successfully");
