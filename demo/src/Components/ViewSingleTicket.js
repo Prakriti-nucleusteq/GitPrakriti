@@ -22,7 +22,7 @@ const ViewSingleTicket = () =>
 
     const getAllTickets = () => {
         const eid = localStorage.getItem("eid")
-        axios.get(`http://localhost:9090/api/tickets/${eid}`).then(
+        axios.get(`http://54.95.126.93:9090/api/tickets/${eid}`).then(
             (response) => {
                 console.log(response.data);
                
