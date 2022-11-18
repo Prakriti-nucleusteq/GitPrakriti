@@ -3,6 +3,7 @@ import React from "react"
 import { toast } from "react-toastify";
 import { Button, Card, CardBody, CardSubtitle, CardText, Col, Container, Row, Toast } from "reactstrap";
 import props from "react";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 import { render } from "@testing-library/react";
 import { useState, createContext, useContext } from "react";
@@ -14,7 +15,7 @@ const Tickets = ({ tickets, update, onUpdate }) => {
 
 
     const deleteTicket = (ticketId) => {
-        axios.delete(`http://54.95.126.93:9090/api/ticket/${ticketId}`).then(
+        axios.delete(BASE_URL+`/api/ticket/${ticketId}`).then(
             (response) => {
                 //toast.success("Ticket Deleted Successfully")
                 alert("Ticket Deleted Successfully")
