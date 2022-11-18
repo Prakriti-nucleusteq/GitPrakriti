@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import Categories from "./Categories";
 import Tickets from "./Tickets";
 import "./ViewTicket.css";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 import { Card, CardBody, CardSubtitle, CardText, Col, Container, Row, Toast, Input, Label } from "reactstrap";
 import { type } from "@testing-library/user-event/dist/type";
@@ -41,7 +42,7 @@ const ViewTicket = () => {
     }
 
     const getAllTickets = () => {
-        axios.get('http://localhost:9090/api/tickets/').then(
+        axios.get(BASE_URL+'/api/tickets/').then(
             (response) => {
                 console.log(response.data);
                 // toast.success("Tickets have been loaded");
@@ -109,7 +110,7 @@ const ViewTicket = () => {
         }
         else if (v === '"Priority - Low"') {
 
-            axios.get(`http://54.95.126.93:9090/api/tickets/priority/low`).then(
+            axios.get(BASE_URL+`/api/tickets/priority/low`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -123,7 +124,7 @@ const ViewTicket = () => {
         }
         else if (v === '"Priority - Moderate"') {
 
-            axios.get(`http://54.95.126.93:9090/api/tickets/priority/moderate`).then(
+            axios.get(BASE_URL+`/api/tickets/priority/moderate`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -137,7 +138,7 @@ const ViewTicket = () => {
         }
         else if (v === '"Priority - High"') {
 
-            axios.get(`http://54.95.126.93:9090/api/tickets/priority/high`).then(
+            axios.get(BASE_URL+`/api/tickets/priority/high`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -155,7 +156,7 @@ const ViewTicket = () => {
         else if (v === "All") {
 
 
-            axios.get('http://54.95.126.93:9090/api/tickets/').then(
+            axios.get(BASE_URL+'/api/tickets/').then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -190,7 +191,7 @@ const ViewTicket = () => {
     }
 
     const handleUpdateTicket = () => {
-        axios.put('http://54.95.126.93:9090/api/ticket/update', {
+        axios.put(BASE_URL+'/api/ticket/update', {
             ticketId,
             assigned: assignTo,
             status,
