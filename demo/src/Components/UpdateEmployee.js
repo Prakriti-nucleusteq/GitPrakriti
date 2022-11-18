@@ -47,7 +47,7 @@ const AddEmployee = () => {
     if (isValidate(formValues)) {
       const Eid = localStorage.getItem("Eid")
       axios
-      .put(`http://localhost:9090/api/users/${Eid}`, {
+      .put(`http://54.95.126.93:9090/api/users/${Eid}`, {
         firstName: formValues.firstName,
         lastName: formValues.lastName,
         email: formValues.email,
