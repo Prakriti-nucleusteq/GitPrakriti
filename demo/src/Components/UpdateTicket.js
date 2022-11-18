@@ -48,7 +48,7 @@ class UpdateTicket extends Component {
                         }
                         
                         const Tid = localStorage.getItem("Tid")
-                        let res = await fetch(`http://localhost:9090/api/ticket/${Tid}`, {
+                        let res = await fetch(`http://54.95.126.93:9090/api/ticket/${Tid}`, {
                         method: "PUT",
                         headers: {
                             'Content-type': "application/json"
