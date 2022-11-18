@@ -7,6 +7,7 @@ import Base from './Base';
 import { Card, CardHeader, Container, FormGroup, Label } from 'reactstrap';
 import { CardBody, Form, Input } from 'reactstrap';
 import axios from 'axios';
+import { BASE_URL } from "../Api/EndPoint/index.js";
 class Registration extends Component {
 
     state = {
@@ -44,7 +45,7 @@ class Registration extends Component {
             {
                 if(this.state.password==this.state.password2)
                 {
-                    let res = await fetch("http://54.95.126.93:9090/api/users/post", {
+                    let res = await fetch(BASE_URL+"/api/users/post", {
                         method: "POST",
                         headers: {
                             'Content-type': "application/json"
