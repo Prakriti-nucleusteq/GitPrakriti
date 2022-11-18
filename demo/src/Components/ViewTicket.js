@@ -68,7 +68,7 @@ const ViewTicket = () => {
         if (v === '"Status - Open"') {
 
 
-            axios.get(`http://localhost:9090/api/tickets/status/open`).then(
+            axios.get(`http://54.95.126.93:9090/api/tickets/status/open`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -81,7 +81,7 @@ const ViewTicket = () => {
             );
         } else if (v == '"Status - Close"') {
 
-            axios.get(`http://localhost:9090/api/tickets/status/close`).then(
+            axios.get(`http://54.95.126.93:9090/api/tickets/status/close`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -95,7 +95,7 @@ const ViewTicket = () => {
         }
         else if (v == '"Status - inProgress"') {
 
-            axios.get(`http://localhost:9090/api/tickets/status/inprogress`).then(
+            axios.get(`http://54.95.126.93:9090/api/tickets/status/inprogress`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -109,7 +109,7 @@ const ViewTicket = () => {
         }
         else if (v === '"Priority - Low"') {
 
-            axios.get(`http://localhost:9090/api/tickets/priority/low`).then(
+            axios.get(`http://54.95.126.93:9090/api/tickets/priority/low`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -123,7 +123,7 @@ const ViewTicket = () => {
         }
         else if (v === '"Priority - Moderate"') {
 
-            axios.get(`http://localhost:9090/api/tickets/priority/moderate`).then(
+            axios.get(`http://54.95.126.93:9090/api/tickets/priority/moderate`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -137,7 +137,7 @@ const ViewTicket = () => {
         }
         else if (v === '"Priority - High"') {
 
-            axios.get(`http://localhost:9090/api/tickets/priority/high`).then(
+            axios.get(`http://54.95.126.93:9090/api/tickets/priority/high`).then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -155,7 +155,7 @@ const ViewTicket = () => {
         else if (v === "All") {
 
 
-            axios.get('http://localhost:9090/api/tickets/').then(
+            axios.get('http://54.95.126.93:9090/api/tickets/').then(
                 (response) => {
                     console.log(response.data);
                     // toast.success("Tickets have been loaded");
@@ -190,7 +190,7 @@ const ViewTicket = () => {
     }
 
     const handleUpdateTicket = () => {
-        axios.put('http://localhost:9090/api/ticket/update', {
+        axios.put('http://54.95.126.93:9090/api/ticket/update', {
             ticketId,
             assigned: assignTo,
             status,
