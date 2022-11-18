@@ -24,7 +24,7 @@ services:
     networks:
       - shared-network
   front-end:
-    build:./demo
+    build : ./demo
     image : helpdeskf:latest
     ports:
       - "3000:3000"
