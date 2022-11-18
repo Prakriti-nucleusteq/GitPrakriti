@@ -4,6 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Navbar";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 const AddEmployee = () => {
 
@@ -47,7 +48,7 @@ const AddEmployee = () => {
     if (isValidate(formValues)) {
       const Eid = localStorage.getItem("Eid")
       axios
-      .put(`http://54.95.126.93:9090/api/users/${Eid}`, {
+      .put(BASE_URL+`/api/users/${Eid}`, {
         firstName: formValues.firstName,
         lastName: formValues.lastName,
         email: formValues.email,
