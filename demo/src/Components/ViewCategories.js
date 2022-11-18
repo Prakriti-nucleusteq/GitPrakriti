@@ -25,7 +25,7 @@ const ViewCategories = () => {
   };
 
   const getAllCategories = () => {
-    axios.get("http://localhost:9090/api/categories/").then(
+    axios.get("http://54.95.126.93:9090/api/categories/").then(
       (response) => {
         console.log(response.data);
         //toast.success("Categories have been loaded");
