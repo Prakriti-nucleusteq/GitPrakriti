@@ -25,7 +25,7 @@ const Login = () => {
     setLoginErrors(valid(loginValues));
     if (isValid) {
       axios
-        .post("http://localhost:9090/api/users/login", {
+        .post("http://54.95.126.93:9090/api/users/login", {
           email: loginValues.emailId,
           password: loginValues.lpassword,
         })
