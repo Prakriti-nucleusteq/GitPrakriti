@@ -7,6 +7,7 @@ import Base from './Base';
 import { Card, CardHeader, Container, FormGroup, Label } from 'reactstrap';
 import { CardBody, Form, Input } from 'reactstrap';
 import axios from 'axios';
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 class UpdateTicket extends Component {
     
@@ -48,7 +49,7 @@ class UpdateTicket extends Component {
                         }
                         
                         const Tid = localStorage.getItem("Tid")
-                        let res = await fetch(`http://54.95.126.93:9090/api/ticket/${Tid}`, {
+                        let res = await fetch(BASE_URL+`/api/ticket/${Tid}`, {
                         method: "PUT",
                         headers: {
                             'Content-type': "application/json"
