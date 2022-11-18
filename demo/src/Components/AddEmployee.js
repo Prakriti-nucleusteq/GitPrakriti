@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Navbar";
 import {useNavigate} from "react-router-dom";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 const AddEmployee = () => {
 
@@ -56,7 +57,7 @@ const AddEmployee = () => {
     setIsActiveValidate(true);
     if (isValidate(formValues)) {
       axios
-      .post("http://54.95.126.93:9090/api/users/create", {
+      .post(BASE_URL+"/api/users/create", {
         firstName: formValues.firstName,
         lastName: formValues.lastName,
         email: formValues.email,
