@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import Categories from "./Categories";
 import SingleTicket from "./SingleTicket";
 import Login from "./Login";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 const ViewSingleTicket = () =>
 {
@@ -22,7 +23,7 @@ const ViewSingleTicket = () =>
 
     const getAllTickets = () => {
         const eid = localStorage.getItem("eid")
-        axios.get(`http://54.95.126.93:9090/api/tickets/${eid}`).then(
+        axios.get(BASE_URL+`/api/tickets/${eid}`).then(
             (response) => {
                 console.log(response.data);
                
