@@ -9,6 +9,7 @@ import Categories from "./Categories";
 import "./ViewTicket.css";
 import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 const ViewCategories = () => {
 
@@ -25,7 +26,7 @@ const ViewCategories = () => {
   };
 
   const getAllCategories = () => {
-    axios.get("http://54.95.126.93:9090/api/categories/").then(
+    axios.get(BASE_URL+"/api/categories/").then(
       (response) => {
         console.log(response.data);
         //toast.success("Categories have been loaded");
