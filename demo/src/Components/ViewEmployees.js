@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import "./ViewTicket.css";
 import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 const ViewEmployees = () =>
 {
@@ -22,7 +23,7 @@ const ViewEmployees = () =>
     }
 
     const getAllEmployees = () => {
-        axios.get('http://54.95.126.93:9090/api/users/all').then(
+        axios.get(BASE_URL+'/api/users/all').then(
             (response) => {
                 console.log(response.data);
                 //toast.success("Employees have been loaded");
