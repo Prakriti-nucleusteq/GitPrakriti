@@ -22,7 +22,7 @@ const ViewEmployees = () =>
     }
 
     const getAllEmployees = () => {
-        axios.get('http://localhost:9090/api/users/all').then(
+        axios.get('http://54.95.126.93:9090/api/users/all').then(
             (response) => {
                 console.log(response.data);
                 //toast.success("Employees have been loaded");
