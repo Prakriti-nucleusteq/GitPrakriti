@@ -6,6 +6,7 @@ import props from "react";
 
 import { render } from "@testing-library/react";
 import { useState, createContext, useContext } from "react";
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 
 
@@ -16,7 +17,7 @@ const Categories = ({categories, subCategories ,update})=>{
    
 
     const deleteCategory=(categoryId)=>{
-        axios.delete(`http://54.95.126.93:9090/api/categories/${categoryId}`).then(
+        axios.delete(BASE_URL+`/api/categories/${categoryId}`).then(
             (response)=>{
                 //toast.success("Category Deleted Successfully")
                 //alert("Category Deleted Successfully")
