@@ -59,7 +59,7 @@ const AddCategory = () => {
       subcategories: subCategoriesList,
     };
     axios
-      .post("http://54.95.126.93:9090/api/categories/create", payload)
+      .post(BASE_URL+"/api/categories/create", payload)
       .then((data) => {
         console.log("response data", data);
         toast.success(" Category/Subcategory added!", {
