@@ -21,6 +21,7 @@ import { loadCategoryId } from "../services/subCategory-service";
 import {useNavigate} from "react-router-dom";
 
 
+
 const AddTicket = () => {
 
   const navigate = useNavigate();
