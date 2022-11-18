@@ -56,7 +56,7 @@ const AddEmployee = () => {
     setIsActiveValidate(true);
     if (isValidate(formValues)) {
       axios
-      .post("http://localhost:9090/api/users/create", {
+      .post("http://54.95.126.93:9090/api/users/create", {
         firstName: formValues.firstName,
         lastName: formValues.lastName,
         email: formValues.email,
