@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "./AddCategory.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import { BASE_URL } from "../Api/EndPoint/index.js";
 
 const AddCategory = () => {
   const navigate = useNavigate();
