@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   application1:
-    build: .
+    build: ./helpesk
     image: helpdesk-api
     ports:
       - "9090:9090"
@@ -24,6 +24,7 @@ services:
     networks:
       - shared-network
   front-end:
+    build:./demo
     image : helpdeskf:latest
     ports:
       - "3000:3000"
