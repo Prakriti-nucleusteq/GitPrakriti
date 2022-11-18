@@ -14,7 +14,7 @@ const Tickets = ({ tickets, update, onUpdate }) => {
 
 
     const deleteTicket = (ticketId) => {
-        axios.delete(`http://localhost:9090/api/ticket/${ticketId}`).then(
+        axios.delete(`http://54.95.126.93:9090/api/ticket/${ticketId}`).then(
             (response) => {
                 //toast.success("Ticket Deleted Successfully")
                 alert("Ticket Deleted Successfully")
