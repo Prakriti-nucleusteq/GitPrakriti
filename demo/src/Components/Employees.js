@@ -6,7 +6,7 @@ import { Button, Card, CardBody, CardSubtitle, CardText, Container, Toast } from
 const Employees = ({employees, update})=>{
 
     const deleteEmployee=(id)=>{
-        axios.delete(`http://localhost:9090/api/users/${id}`).then(
+        axios.delete(`http://54.95.126.93:9090/api/users/${id}`).then(
             (response)=>{
               //  toast.success("Employee Deleted Successfully")
                 //alert("Employee Deleted Successfully")
