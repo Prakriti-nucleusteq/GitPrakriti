@@ -6,7 +6,7 @@ import props from "react";
 
 import { render } from "@testing-library/react";
 import { useState, createContext, useContext } from "react";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 
 
