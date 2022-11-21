@@ -3,7 +3,7 @@ import React from "react"
 import { toast } from "react-toastify";
 import { Button, Card, CardBody, CardSubtitle, CardText, Col, Container, Row, Toast } from "reactstrap";
 import props from "react";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 import { render } from "@testing-library/react";
 import { useState, createContext, useContext } from "react";
