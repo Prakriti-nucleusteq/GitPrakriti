@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import Categories from "./Categories";
 import SingleTicket from "./SingleTicket";
 import Login from "./Login";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 const ViewSingleTicket = () =>
 {
