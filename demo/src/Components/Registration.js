@@ -7,7 +7,7 @@ import Base from './Base';
 import { Card, CardHeader, Container, FormGroup, Label } from 'reactstrap';
 import { CardBody, Form, Input } from 'reactstrap';
 import axios from 'axios';
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 class Registration extends Component {
 
     state = {
