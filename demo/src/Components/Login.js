@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "./auth";
 import ViewSingleTicket from "./ViewSingleTicket";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 const Login = () => {
   const navigate = useNavigate();
   
