@@ -1,4 +1,4 @@
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 const axios = required ('axios')
 
 
