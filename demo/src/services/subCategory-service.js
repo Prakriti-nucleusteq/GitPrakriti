@@ -1,6 +1,6 @@
 import axios from "axios";
 // import Axios from "axios";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 export const loadAllSubCategories=()=>{
     return axios.get(BASE_URL+'/api/categories/subcategories').then(response=>{return response.data})
