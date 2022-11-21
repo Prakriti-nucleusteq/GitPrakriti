@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react"
 import { toast } from "react-toastify";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 import { Button, Card, CardBody, CardSubtitle, CardText, Container, Toast } from "reactstrap";
 const Employees = ({employees, update})=>{
