@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import Categories from "./Categories";
 import Tickets from "./Tickets";
 import "./ViewTicket.css";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 import { Card, CardBody, CardSubtitle, CardText, Col, Container, Row, Toast, Input, Label } from "reactstrap";
 import { type } from "@testing-library/user-event/dist/type";
