@@ -9,7 +9,7 @@ import Categories from "./Categories";
 import "./ViewTicket.css";
 import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar";
-import { BASE_URL } from "../Api/EndPoint/index.js";
+import { BASE_URL } from "../Api/EndPoint/Index.js";
 
 const ViewCategories = () => {
 
